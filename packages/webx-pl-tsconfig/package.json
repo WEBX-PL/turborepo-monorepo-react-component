@@ -1,0 +1,19 @@
+{
+  "name": "@webx-pl/tsconfig",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "base.json",
+    "node16.json",
+    "react-library.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/webx-pl/turborepo-monorepo-react-component.git",
+    "directory": "packages/webx-pl-tsconfig"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

@@ -45,9 +45,9 @@ Using Turborepo simplifes managing your design system monorepo, as you can have 
 This Turborepo includes the following packages and applications:
 
 - `apps/docs`: Component documentation site with Storybook
-- `packages/@acme/core`: Core React components
-- `packages/@acme/utils`: Shared React utilities
-- `packages/@acme/tsconfig`: Shared `tsconfig.json`s used throughout the Turborepo
+- `packages/@webx-pl/core`: Core React components
+- `packages/@webx-pl/utils`: Shared React utilities
+- `packages/@webx-pl/tsconfig`: Shared `tsconfig.json`s used throughout the Turborepo
 - `packages/eslint-preset-acme`: ESLint preset
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). Yarn Workspaces enables us to "hoist" dependencies that are shared between packages to the root `package.json`. This means smaller `node_modules` folders and a better local dev experience. To install a dependency for the entire monorepo, use the `-W` workspaces flag with `yarn add`.
@@ -70,7 +70,7 @@ tsup src/index.tsx --format esm,cjs --dts --external react
 
 ```json:acme-core/package.json
 {
-  "name": "@acme/core",
+  "name": "@webx-pl/core",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -82,7 +82,7 @@ tsup src/index.tsx --format esm,cjs --dts --external react
 Run `yarn build` to confirm compilation is working correctly. You should see a folder `acme-core/dist` which contains the compiled output.
 
 ```bash
-acme-core
+webx-pl-core
 └── dist
     ├── index.d.ts  <-- Types
     ├── index.js    <-- CommonJS version
