@@ -1,4 +1,4 @@
-# Turborepo Design System Starter
+# WEBX.PL Turborepo Design System Starter
 
 This guide explains how to use a React design system starter powered by:
 
@@ -182,8 +182,8 @@ turbo run build --filter=docs^... && changeset publish
 
 Turborepo runs the `build` script for all publishable packages (excluding docs) and publishes the packages to npm. By default, this example includes `acme` as the npm organization. To change this, do the following:
 
-- Rename folders in `packages/*` to replace `acme` with your desired scope
-- Search and replace `acme` with your desired scope
+- Rename folders in `packages/*` to replace `webx-pl` with your desired scope
+- Search and replace `webx-pl` with your desired scope
 - Re-run `yarn install`
 
 To publish packages to a private npm organization scope, **remove** the following from each of the `package.json`'s
